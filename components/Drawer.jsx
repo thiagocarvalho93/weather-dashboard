@@ -41,68 +41,80 @@ function ResponsiveDrawer(props) {
       <Divider />
       <List>
         <ListItem disablePadding>
-          <Link href="/dashboard">
+          <Link href="/">
             <ListItemButton>
               <ListItemIcon>
                 <DashboardIcon />
               </ListItemIcon>
-              <ListItemText primary="Painel" />
+              <ListItemText primary="Home" />
             </ListItemButton>
           </Link>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <DeviceThermostatIcon />
-            </ListItemIcon>
-            <ListItemText primary="Temperatura" />
-          </ListItemButton>
+          <Link href="/temperatura">
+            <ListItemButton>
+              <ListItemIcon>
+                <DeviceThermostatIcon />
+              </ListItemIcon>
+              <ListItemText primary="Temperatura" />
+            </ListItemButton>
+          </Link>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <AirIcon />
-            </ListItemIcon>
-            <ListItemText primary="Vento" />
-          </ListItemButton>
+          <Link href="/vento">
+            <ListItemButton>
+              <ListItemIcon>
+                <AirIcon />
+              </ListItemIcon>
+              <ListItemText primary="Vento" />
+            </ListItemButton>
+          </Link>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <CompressIcon />
-            </ListItemIcon>
-            <ListItemText primary="Pressão atmosférica" />
-          </ListItemButton>
+          <Link href="/pressao">
+            <ListItemButton>
+              <ListItemIcon>
+                <CompressIcon />
+              </ListItemIcon>
+              <ListItemText primary="Pressão atmosférica" />
+            </ListItemButton>
+          </Link>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <WaterIcon />
-            </ListItemIcon>
-            <ListItemText primary="Umidade" />
-          </ListItemButton>
+          <Link href="/umidade">
+            <ListItemButton>
+              <ListItemIcon>
+                <WaterIcon />
+              </ListItemIcon>
+              <ListItemText primary="Umidade" />
+            </ListItemButton>
+          </Link>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <ThunderstormIcon />
-            </ListItemIcon>
-            <ListItemText primary="Chuva" />
-          </ListItemButton>
+          <Link href="/chuva">
+            <ListItemButton>
+              <ListItemIcon>
+                <ThunderstormIcon />
+              </ListItemIcon>
+              <ListItemText primary="Chuva" />
+            </ListItemButton>
+          </Link>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <WbSunnyIcon />
-            </ListItemIcon>
-            <ListItemText primary="Radiação solar" />
-          </ListItemButton>
+          <Link href="/radiacao">
+            <ListItemButton>
+              <ListItemIcon>
+                <WbSunnyIcon />
+              </ListItemIcon>
+              <ListItemText primary="Radiação solar" />
+            </ListItemButton>
+          </Link>
         </ListItem>
       </List>
 
