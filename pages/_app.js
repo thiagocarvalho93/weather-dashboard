@@ -1,12 +1,12 @@
 import "../styles/globals.css";
 import ResponsiveDrawer from "../components/Drawer";
-import { AppWrapper, useAppContext } from "../context/dataContext";
-import dataService from "../services/dataService";
+import { AppWrapper } from "../context/dataContext";
 import { useEffect } from "react";
+import observationService from "../services/observationService";
 
 function MyApp({ Component, pageProps }) {
   const handleBuscarDados = async () => {
-    const response = await dataService.getAll();
+    const response = await observationService.getThreeDays("IMACA7");
     console.log(response);
   };
 
